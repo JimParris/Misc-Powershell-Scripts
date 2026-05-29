@@ -14,6 +14,16 @@ function Send-EWSEmail {
         Import-Module -Name 'C:\Program Files\Microsoft\Exchange\Web Services\2.2\Microsoft.Exchange.WebServices.dll'
         Import-Module .\Send-EWSEmail.ps1
         Send-EWSEmail -ServiceURL "https://outlook.office365.com/EWS/Exchange.asmx" -Recipient "me@me.com" -Subject "Important Message!" -EmailBody "All, <br> Check out the attachment." -Attachment .\WordDocument.rtf
+
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
 #>
     [CmdletBinding()]
     Param(

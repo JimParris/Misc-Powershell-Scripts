@@ -1,3 +1,17 @@
+<#
+.SYNOPSIS
+    AES key generation, encryption, and decryption utility functions.
+
+.LINK
+    http://configman-notes.com
+
+.NOTES
+    Author:  Jim Parris
+    Email:   Jim@ConfigMan-Notes.com
+    Version: 1.0.0.0
+    Date:    2026-05-29
+    Updated:
+#>
 function Create-AesManagedObject($key, $IV) {
     # I grabbed this from somewhere. Google it for attribution ;P
     $aesManaged = New-Object "System.Security.Cryptography.AesManaged"

@@ -50,7 +50,20 @@ function Decrypt-String($key, $encryptedStringWithIV) {
 }
 
 function Send-CommandToAgent {
+    <#
+    .SYNOPSIS
+        Send an AES-encrypted command to a multicast agent.
 
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
+    #>
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory = $false)]

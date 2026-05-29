@@ -12,6 +12,16 @@ function Brute-365 {
         may enable lockout thresholds. Has optional parameter to beep when a login is successful
     .EXAMPLE
         Brute-365 -csv .\targets.csv -Password "Winter2016!" -Beep
+
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
 #>
   Param(
     [Parameter(Mandatory=$False)]
@@ -61,6 +71,16 @@ function Brute-365 {
         Has optional parameter to beep when a login is successful.
     .EXAMPLE
         Brute-OWA -csv .\targets.csv -Password "Winter2016!" -Beep
+
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
 #>
   # https://blogs.technet.microsoft.com/meamcs/2015/03/06/powershell-script-to-simulate-outlook-web-access-url-user-logon/
   Param(

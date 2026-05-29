@@ -52,7 +52,20 @@ function Decrypt-String($key, $encryptedStringWithIV) {
 
 
 function Start-MulticastAgent {
-   
+    <#
+    .SYNOPSIS
+        Listen for and execute AES-encrypted commands received over multicast UDP.
+
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
+    #>
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory = $false)]

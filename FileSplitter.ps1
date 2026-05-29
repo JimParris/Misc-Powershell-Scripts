@@ -1,8 +1,19 @@
 function Split-File {
 
-<#-- Another stackoverflow production 
-https://stackoverflow.com/questions/4533570/in-powershell-how-do-i-split-a-large-binary-file
---#>
+<#
+.SYNOPSIS
+    Split a large binary file into chunks or reassemble chunks back into a file.
+
+.LINK
+    https://stackoverflow.com/questions/4533570/in-powershell-how-do-i-split-a-large-binary-file
+
+.NOTES
+    Author:  Jim Parris
+    Email:   Jim@ConfigMan-Notes.com
+    Version: 1.0.0.0
+    Date:    2026-05-29
+    Updated:
+#>
 
   [CmdletBinding()]
   Param (
@@ -47,6 +58,20 @@ https://stackoverflow.com/questions/4533570/in-powershell-how-do-i-split-a-large
 
 
 function Reassemble-File {
+    <#
+    .SYNOPSIS
+        Reassemble file chunks produced by Split-File back into a single file.
+
+    .LINK
+        http://configman-notes.com
+
+    .NOTES
+        Author:  Jim Parris
+        Email:   Jim@ConfigMan-Notes.com
+        Version: 1.0.0.0
+        Date:    2026-05-29
+        Updated:
+    #>
     [CmdletBinding()]
     Param (
         [Parameter(Mandatory = $true)]
